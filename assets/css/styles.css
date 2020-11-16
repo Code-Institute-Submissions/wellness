@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=News+Cycle&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h3, h4 {
+    font-family: 'News Cycle', sans-serif;
+}
+
+.header {
+    background-color: rgb(255, 250, 244);
+}
+
+h1 {
+    color: rgb(36, 36, 36);
+    letter-spacing: 2px;
+    float: left;
+    text-decoration: none;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+}
+
+.drop-menu {
+    float: right;
+    padding: 10px;
+}
+
+.drop-menu-content {
+    display: none;
+    position: relative;
+}
+
+.drop-menu-content a {
+  color: rgb(36, 36, 36);
+  background-color: antiquewhite;
+  padding: 7px;
+  text-decoration: none;
+  display: block;
+}
+
+.menu:hover .drop-menu-content{
+    display: block;
+}
+
+#hero-image {
+    background: url(images/pexels-fauxels-3184405.jpg);
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
