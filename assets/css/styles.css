@@ -8,12 +8,17 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
     background-color: rgb(255, 250, 244);
     color: rgb(28, 35, 43);
 }
 
 h1, h3, h4 {
     font-family: 'News Cycle', sans-serif;
+}
+
+h3, h4, p {
+    margin: 10px;
 }
 
 h1 {
@@ -53,15 +58,48 @@ h1 {
 #hero-image {
     background: url(images/hero.jpg);
     background-size: cover;
-    height: 450px;
-    position: relative;
+    background-position: center left;
+    height: 500px;
+    width: 100%;
     margin: 0;
 }
 
 h3, h4 {
     text-align: center;
     text-transform: capitalize;
-    padding: 10px 0px 
+    font-weight: 550;
+    padding: 10px;
+}
+
+.interests {
+    float: left;
+    width: 350px;
+    height: 450px;
+    margin: 10px;
+    border: 1px slategrey solid;
+}
+
+.interests:hover {
+    border: 1.5px slategray solid;
+}
+
+.coffee{
+    background: url(images/coffee.jpg);
+}
+
+.fitness { 
+    background: url(images/fitness.jpg);
+}
+
+.talk {
+    background: url(images/work_home.jpg);
+}
+
+.coffee, .fitness, .talk {
+    width: 350px;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
 }
 
 .manager-img {
@@ -70,24 +108,27 @@ h3, h4 {
 
 .staff-img {
     background: url(images/ben.jpg);
-
 }
 
 .staff-img-2 {
     background: url(images/ria.jpg)
 }
 
-.manager-img, .staff-img, .staff-img-2 {
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 150px;
-    padding: 100px;
-    border: 1px gray solid;
-    border-radius: 50%;
+.staff {
+    display: inline-block;
 }
 
 .staff-info {
-    text-align: center;
+   float: left;
+   width: 175px;
+   height: 175px;
+   margin: 50px;
 }
 
+.manager-img, .staff-img, .staff-img-2 {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    border: 1px gray solid;
+    border-radius: 50%;
+}
