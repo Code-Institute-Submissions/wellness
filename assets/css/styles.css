@@ -8,14 +8,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(255, 250, 244);
+    color: rgb(28, 35, 43);
 }
 
 h1, h3, h4 {
     font-family: 'News Cycle', sans-serif;
-}
-
-.header {
-    background-color: rgb(255, 250, 244);
 }
 
 h1 {
@@ -53,8 +51,43 @@ h1 {
 }
 
 #hero-image {
-    background: url(images/pexels-fauxels-3184405.jpg);
+    background: url(images/hero.jpg);
     background-size: cover;
     height: 450px;
     position: relative;
+    margin: 0;
 }
+
+h3, h4 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0px 
+}
+
+.manager-img {
+    background: url(images/samantha.jpg);
+}
+
+.staff-img {
+    background: url(images/ben.jpg);
+
+}
+
+.staff-img-2 {
+    background: url(images/ria.jpg)
+}
+
+.manager-img, .staff-img, .staff-img-2 {
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    padding: 100px;
+    border: 1px gray solid;
+    border-radius: 50%;
+}
+
+.staff-info {
+    text-align: center;
+}
+
