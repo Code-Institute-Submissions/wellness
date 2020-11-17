@@ -1,6 +1,6 @@
 # My Wellness
 
-MyWellness is an inhouse website for business and their employees to understand and develop their wellbeing. Changing the stigma of mental health.
+My wellness is designed to be an in-house website for businesses and their employees to better understand and develop their wellbeing.
 
 ### User Stories
 
@@ -14,6 +14,8 @@ MyWellness is an inhouse website for business and their employees to understand 
 The layout of the website is designed to be straight forward for 1st time users and those who are looking for a certain content. The color scheme and images chosen are to provided the user with thoughts/associations of tranquility.  
 
 ### Wireframes
+
+
 
 I have used the form code from the love running.
 I have chosen to use the font families of Montserrat and News cycle. Using News cycle for my headings and subheadings and Montserrat for the rest of the body. 
