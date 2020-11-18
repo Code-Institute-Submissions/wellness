@@ -10,7 +10,7 @@ body {
     
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1px;
-    background-color: #fefaf6;
+    background-color: #fafafa;
     color: #020609;
 }
 
@@ -38,11 +38,13 @@ h1 {
     text-decoration: none;
 }
 
+/* navigation and hero image */
+
 .navigation {
     width: 100%;
     height: 50px;
     background-color: #fefaf6;
-    border-bottom: 1px #112233 solid;
+    /* border-bottom: 1px #112233 solid; */
     position: fixed;
 }
 
@@ -85,13 +87,15 @@ h1 {
     margin: 0;
 }
 
+/* support section styles */
+
 .interests {
     float: left;
     width: 350px;
     height: 500px;
     margin: 10px;
-    border: 1px slategrey solid;
-    background-color: #112233;
+    border: 0.5px slategrey solid;
+    background-color: #1d3c59;
 }
 
 .interests:hover {
@@ -122,7 +126,7 @@ h1 {
 }
 
 .coffee, .fitness, .talk {
-    width: 350px;
+    width: 100%;
     height: 300px;
     background-position: center;
     background-size: cover;
@@ -159,9 +163,13 @@ h1 {
     border-radius: 50%;
 }
 
+/* get involved section styles */
+
+/* contact us section styles */
+
 #box {
     height: 500px;
     width: 100%;
-    background-color: #112233;
-    color: antiquewhite;
+    background-color: #1d3c59;
+    color: #fdf6ee;
 }

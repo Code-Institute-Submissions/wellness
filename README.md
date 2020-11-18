@@ -19,7 +19,7 @@ The color scheme and images chosen are to provided the user with thoughts/associ
 
 ### Layout 
 
-The structure of the website is designed as one page with links in the menu to the various sections o the site.
+The structure of the website is designed as one page with links in the menu to the various sections within the site.
 
 #### Wireframes
 
