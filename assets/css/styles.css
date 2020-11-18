@@ -144,15 +144,10 @@ h1 {
     background: url(images/ria.jpg)
 }
 
-.staff {
-    display: inline-block;
-}
-
 .staff-info {
-   float: left;
-   width: 175px;
-   height: 175px;
-   margin: 50px;
+    margin: auto;
+    width: 175px;
+    height: 175px;
 }
 
 .manager-img, .staff-img, .staff-img-2 {
@@ -172,4 +167,8 @@ h1 {
     width: 100%;
     background-color: #1d3c59;
     color: #fdf6ee;
+}
+
+.contact {
+    padding: 10px;
 }
