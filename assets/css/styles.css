@@ -26,34 +26,43 @@ h3, h4 {
 }
 
 p {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+
+/* navigation and hero image */
+
+.navigation {
+    height: 35px;
+    width: 100%;
+    top: 0;
+    background-color: #fefaf6;
+    position: fixed;
+    z-index: 1;
+    display: flex;
 }
 
 h1 {
     color: rgb(36, 36, 36);
     letter-spacing: 2px;
-    font-size: 34px;
-    float: left;
+    font-size: 24px;
+    left: 0;
     text-decoration: none;
 }
 
-/* navigation and hero image */
-
-.navigation {
-    width: 100%;
-    height: 50px;
-    background-color: #fefaf6;
-    /* border-bottom: 1px #112233 solid; */
-    position: fixed;
-}
-
 .menu {
+    height: 30px;
+    top: 0;
     right: 0;
 }
 
-.drop-menu {
+.bars{
     float: right;
+}
+
+.drop-menu {
     padding: 10px;
 }
 
@@ -76,24 +85,26 @@ h1 {
 
 .drop-menu-content a:hover {
     background-color: rgb(206, 206, 206);
-}
+} 
+
 
 #hero-image {
     background: url(images/hero.jpg);
     background-size: cover;
     background-position: center left;
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin: 0;
+    position: static;
 }
 
 /* support section styles */
 
 .interests {
     float: left;
-    width: 350px;
-    height: 500px;
-    margin: 10px;
+    width: 300px;
+    height: 400px;
+    margin: 5px;
     border: 0.5px slategrey solid;
     background-color: #1d3c59;
 }
@@ -107,6 +118,7 @@ h1 {
 }
 
 .interests p {
+    line-height: 21px;
     color: antiquewhite;
     text-align: center;
     font-size: 14px;
@@ -127,9 +139,10 @@ h1 {
 
 .coffee, .fitness, .talk {
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .manager-img {
@@ -146,29 +159,121 @@ h1 {
 
 .staff-info {
     margin: auto;
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
 }
 
 .manager-img, .staff-img, .staff-img-2 {
     background-size: cover;
     background-position: center;
-    height: 100%;
+    width: 150px;
+    height: 150px;
     border: 1px gray solid;
     border-radius: 50%;
+    position: relative;
+}
+
+#staff {
+    padding: 10px;
+    font-weight: 550;
 }
 
 /* get involved section styles */
 
+.event {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.running {
+    width: 100%;
+    height: 350px;
+    margin: 20px;
+    background: url(images/running.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* contact us section styles */
 
 #box {
-    height: 500px;
+    height: 550px;
     width: 100%;
+    margin: auto;
     background-color: #1d3c59;
     color: #fdf6ee;
+    border-top: 1.5px slategrey solid;
+    padding: 8px;
 }
 
-.contact {
+.contact-info{
+    margin-top: 5px;
+}
+
+.contact-info p{
+    font-size: 12px;
+    text-align: center;
+}
+
+form, form p {
+    font-size: 12px;
+    width: 100%;
     padding: 10px;
+}
+
+input[type=text], input[type=number], input[type=email] {
+    background-color: #1d3c59;
+    border: none;
+    border-bottom: 1px #fdf6ee solid;
+    color: white;
+}
+
+input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
+   border: #cccccc;
+}
+
+input[type=button] {
+    background-color: #fdf6ee;
+    margin-top: 8px;
+    padding: 8px;
+}
+
+/* footer styles */
+
+footer {
+    
+    height: 200px;
+    width: 100%;
+    background-color: #cccccc;  
+    color: #112233;
+}
+
+.add-help {
+    height: 50px;
+}
+
+.add-help a {
+    text-align: center;
+    text-decoration: none;
+    padding: 20px, 10px;
+    font-size: 14px;
+    color:#112233;
+}
+
+footer p {
+    margin: 10px;
+    padding: 0px, 20px;
+    font-size: 10px;
+    float: left;
+    bottom: 0;
+}
+
+footer a {
+    padding: 5px;
+    float: right;
+    bottom: 0;
+    color: inherit;
 }

@@ -10,52 +10,57 @@
     <title>MyWellness</title>
 </head>
 <body>
-    <div class=".container navigation">
-        <div class="row">
-            <a class="col-8" href="index.html">
+    <div class="navigation">
+        <div>
+            <a href="index.html">
                 <h1>MyWellness</h1>
             </a> 
-            <div class="col-4 menu"> 
-                <button class="drop-menu">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <nav>
-                    <ul>
-                        <li class="drop-menu-content">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="drop-menu-content">
-                            <a href="#about">About us</a>
-                        </li>
-                        <li class="drop-menu-content">
-                            <a href="#help">Support</a> 
-                        </li>
-                        <li class="drop-menu-content">
-                            <a href="#get_involved">Get involved</a> 
-                        </li>
-                        <li class="drop-menu-content">
-                            <a href="#contact">Contact us</a> 
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+
         </div>
+
+        <div class="menu"> 
+            <div class="bars">
+                <button >
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li class="drop-menu-content">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="drop-menu-content">
+                        <a href="#about">About us</a>
+                    </li>
+                    <li class="drop-menu-content">
+                        <a href="#help">Support</a> 
+                    </li>
+                    <li class="drop-menu-content">
+                        <a href="#get_involved">Get involved</a> 
+                    </li>
+                    <li class="drop-menu-content">
+                        <a href="#contact">Contact us</a> 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </div>
 
     <div id="hero-image">
-    </div> 
-    <br>
+    </div>
 
  <!-- About us section-->
-    <section>
+    <section class="container">
         <h3 id="about">About us</h3>
         <p> We are here to help you understand and find ways to improve your wellness, creating a better work environment for you and others around you. In
             2019/20 work-related stress, depression or anxiety accounted for 51% of all work-related ill health and 55% of all days lost due to work-related ill-health(HSE). We are here to change the stigma around mental health.  </p>
     </section>
 <!--Support section-->
     <section>
-        <h3 id="help">Support</h3>
-        <div class=".container">
+
+        <div class="container">
+            <h3 id="help">Support</h3>
             <div class="row">
                 <div class="col-md">
                     <div class="interests">
@@ -113,64 +118,91 @@
                     </div>
 
                 </div>
+                
             </div>
+            
         </div>
-        <p>For a one on one session or additional help our support staff are here to accommodate.</p>
+        <p id="staff">For a one on one session or additional help our support staff are here to accommodate.</p>
 
     </section>
 
 <!--Get involved section-->
-
-    <section> 
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h3 id="get_involved">Get involved</h3>
-                    <p>We have events and activities in the first week of the month. Past events have been charity coffee morning, bowling and hiking. </p>
-                </div>
-                <div class="col-6"> 
-                event image
-                </div>
+<hr>
+    <section class="container"> 
+        <div class="row">
+            <div class="col-sm-6 event">
+                <h3 id="get_involved">Get involved</h3>
+                <p>Throughout the yea we ike to raise awareness to mental health. It would be great if you could help. This could be baking a cake for a bake sale or running a marathon, it's up to you.</p>
+            </div>
+            <div class="col-sm-6 running"> 
             </div>
         </div>
     </section>
 
 <!--Contact us and additional resource links-->
 
-    <section> 
-    <div class=".container" id="box">
+    <section class="container"> 
+    <div id="box">
         <div class="row">
-            <div class="col-md-4 contact">
+            <div class="col-md-4 contact-info">
                 <h3 id="contact">Contact us</h3>
-                <p>Office Hours and Location: 9:00am to 4:00pm Monday - Friday
-                1st floor next to the canteen.
-                </p>
+                <p> <strong>Wellness Office:</strong> 1st floor next to the canteen.
+                <br>
+                <strong>Office Hours:</strong> 9:00am to 4:00pm Monday - Friday
+                <br>
+                <strong>Telephone: </strong> 02081234567
+                <br>
+                <strong>Email: </strong> help@mywellness.com</p>
             </div>
-            <div class="col-md-6">
-                <form>
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="first_name" required>
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="last_name" required>
-                <label for="telenumber">Telephone number</label>
-                <input type="number" name="telephone_number" id="telenumber" maxlength="11" size="11" required>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email_address" required>
+            <form class="col-sm">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="first_name" required> 
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="last_name" required>
+            <br>
+            <label for="telenumber">Phone number:</label>
+            <input type="number" name="telephone_number" id="telenumber" maxlength="11" size="11" required>
+            <br>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email_address" required>
+            </form>
 
-                <p>I would like more information on...</p>
-                <input type="radio" id="support" name="information" required>
-                <label for="support">Support available</label>
-                <input type="radio" id="events" name="information">
-                <label for="events">Events and activities</label>
-                <input type="radio" id="session" name="information">
-                <label for="session">One on one session</label>
-                <input type="button" value="submit">
-                </form>
-            </div>
+            <form class="col-sm">
+            <p>I would like more information on...</p>
+            <input type="radio" id="support" name="information" required>
+            <label for="support">Support available</label>
+            <br>
+            <input type="radio" id="events" name="information">
+            <label for="events">Events and activities</label>
+            <br>
+            <input type="radio" id="session" name="information">
+            <label for="session">One on one session</label>
+            <br>
+            <input type="radio" id="all" name="information">
+            <label for="all">All the above</label>
+            <br>
+            <input type="button" value="Submit">
+            </form>
         </div>
     </div>
+   
 
     </section>
-    <footer>social media</footer>
+    <footer>
+        <div class="add-help">
+            <a href="https://mentalhealth-uk.org/" target="_blank">Mental Health UK</a>
+            <a href="https://www.mind.org.uk/" target="_blank">Mind</a>
+            <a href="https://www.samaritans.org/" target="_blank">Samaritans</a>
+        </div>
+        <p><strong>Contact us</strong>
+        <br>
+        <strong>Telephone:</strong> 02081234567 
+        <br>
+        <strong>Email:</strong> help@mywellness.com</p>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+    </footer>
 </body>
 </html>
