@@ -22,7 +22,15 @@ h1, h3, h4 {
 h3, h4 {
     text-align: center;
     text-transform: capitalize;
-    padding: 10px;
+    padding: 15px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 p {
@@ -34,53 +42,58 @@ p {
 
 /* navigation and hero image */
 
+.mobile-nav{
+    float: right;
+}
+
+.desktop-nav{
+    display: none;
+}
+
 .navigation {
     height: 35px;
     width: 100%;
     top: 0;
-    background-color: #fefaf6;
+    background-color: #eeeeee;
     position: fixed;
     z-index: 1;
-    display: flex;
 }
 
 h1 {
     color: rgb(36, 36, 36);
     letter-spacing: 2px;
     font-size: 24px;
-    left: 0;
+    float: left;
     text-decoration: none;
 }
 
 .menu {
-    height: 30px;
-    top: 0;
-    right: 0;
-}
-
-.bars{
     float: right;
+    padding-right: 10px;
 }
 
-.drop-menu {
-    padding: 10px;
+.bars {
+    float: right;
 }
 
 .drop-menu-content {
     display: none;
-    position: relative;
 }
 
 .drop-menu-content a {
   color: rgb(36, 36, 36);
   background-color: #faebd7;
-  padding: 7px;
+  padding: 5px;
   text-decoration: none;
   display: block;
+  border-bottom: 1px rgb(206, 206, 206) solid;
 }
 
 .menu:hover .drop-menu-content{
     display: block;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .drop-menu-content a:hover {
@@ -90,27 +103,31 @@ h1 {
 
 #hero-image {
     background: url(images/hero.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center left;
-    height: 400px;
+    height: 500px;
     width: 100%;
     margin: 0;
-    position: static;
+    position: relative;
 }
 
 /* support section styles */
 
 .interests {
-    float: left;
     width: 300px;
     height: 400px;
-    margin: 5px;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 5px;
     border: 0.5px slategrey solid;
     background-color: #1d3c59;
 }
 
 .interests:hover {
-    border: 1.5px slategray solid;
+    border: 2px #020609 solid;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
 }
 
 .interests h4 {
@@ -166,6 +183,11 @@ h1 {
     font-weight: 500;
 }
 
+.staff-info p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .manager-img, .staff-img, .staff-img-2 {
     background-size: cover;
     background-position: center;
@@ -177,8 +199,8 @@ h1 {
 }
 
 #staff {
-    padding: 10px;
-    font-weight: 550;
+    margin: 10px 50px;
+    text-align: center;
 }
 
 /* get involved section styles */
@@ -186,6 +208,7 @@ h1 {
 .event {
     width: 100%;
     padding-bottom: 20px;
+    text-align: center;
 }
 
 .running {
@@ -200,7 +223,7 @@ h1 {
 /* contact us section styles */
 
 #box {
-    height: 550px;
+    height: 575px;
     width: 100%;
     margin: auto;
     background-color: #1d3c59;
@@ -244,36 +267,247 @@ input[type=button] {
 /* footer styles */
 
 footer {
-    
-    height: 200px;
+    height: 120px;
     width: 100%;
-    background-color: #cccccc;  
-    color: #112233;
-}
-
-.add-help {
-    height: 50px;
-}
-
-.add-help a {
-    text-align: center;
-    text-decoration: none;
-    padding: 20px, 10px;
-    font-size: 14px;
-    color:#112233;
+    background-color: #cccccc;
+    padding: 10px;
+    position: relative;
 }
 
 footer p {
-    margin: 10px;
-    padding: 0px, 20px;
     font-size: 10px;
-    float: left;
+    left: 0;
     bottom: 0;
+    position: absolute;
 }
 
-footer a {
-    padding: 5px;
-    float: right;
+.charites {
+    padding: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.charites a {
+    color: #112233; 
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.social {
+    right: 0;
+    position: absolute;
     bottom: 0;
-    color: inherit;
+    padding-bottom: 10px;
+}
+
+.social a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+@media only screen and (min-width: 600px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .navigation {
+        height: 45px;
+    }
+
+    h1 h3{
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .interests {
+        width: 100%;
+        height: 250px;
+    }
+
+    .coffee, .talk {
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    .fitness {
+        width: 40%;
+        height: 100%;
+        float: right;
+    }
+
+    .interests h4 {
+        padding-top: 40px;
+    }
+
+    .interests p {
+        padding: 10px;
+    }
+
+    #staff {
+        font-weight: 600;
+        padding-top: 30px;
+    }
+
+    .event {
+        margin: auto;
+    }
+
+    .running {
+        height: 400px;
+    }
+
+    #box {
+        height: 475px;
+    }
+
+    .contact-info, .requests {
+        margin: auto;
+    }
+
+    .details {
+        margin-top: 30px;
+    }
+
+    .contact-info, form p {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .charites {
+        font-size: 14px;
+    }
+
+    .charites a {
+        text-decoration: none;
+        margin: 0px 20px;
+    }
+
+    .social {
+        font-size: 2em;
+        padding: 0px 0px 10px;
+    }
+
+    .drop-menu-content a {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 34px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: inline;
+    }
+
+    .desktop-nav ul {
+        float: right;
+        height: 100%;
+        width: 490px;
+        font-size: 14px;
+    }
+
+    .desktop-nav li {
+        display: inline-block;
+        list-style-type: none;
+        padding: 10px 10px 10px;
+    }
+
+    .desktop-nav a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .desktop-nav li:hover {
+        background-color: #112233;
+        color: #fdf6ee;
+        cursor: pointer;
+        transition: 0.25s ease-in;
+        -webkit-transition: 0.25s ease-in;
+    }
+
+    .desktop-nav li:active {
+        background-color: #112233;
+        color: #fdf6ee;
+    }
+
+    .interests {
+        width: 300px;
+        height: 500px;
+        margin: 0;
+    }
+
+    .coffee, .fitness, .talk {
+        height: 250px;
+        width: 100%;
+    }
+
+    .manager-img, .staff-img, .staff-img-2 {
+        height: 175px;
+        width: 175px;
+        border: 50%;
+        margin-bottom: 10px;
+    }
+
+    #staff {
+        height: 25px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    #box {
+        height: 350px;
+    }
+
+    .details {
+        padding-top: 50px;
+    }
+
+    .requests {
+        padding-top: 30px;
+    }
+
+    input[type=button] {
+        margin-left: -20%;
+    }
+
+    footer {
+        height: 160px;
+    }
+
+    .charites {
+        font-size: 16px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
 }
