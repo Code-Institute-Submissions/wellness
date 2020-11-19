@@ -23,10 +23,10 @@ The structure of the website is designed as one page with links in the menu to t
 
 #### Wireframes
 
-* Home page wireframe
-* Support page wireframe
-* Get involved page wireframe
-* Contatct us page wireframe
+* [Home](https://user-images.githubusercontent.com/70588217/99721261-d4ea6180-2aa6-11eb-8f82-c4dd054c5be9.PNG)
+* [Support](https://user-images.githubusercontent.com/70588217/99722152-22b39980-2aa8-11eb-8bb3-7621e56cd6ff.PNG)
+* [Get involved](https://user-images.githubusercontent.com/70588217/99722208-3fe86800-2aa8-11eb-9fec-1a5580707a41.PNG)
+* [Contatct us](https://user-images.githubusercontent.com/70588217/99722218-437bef00-2aa8-11eb-8fd4-9a8f35a5ceec.PNG)
 
 ### Features
 
