@@ -92,8 +92,9 @@ h1 {
 .menu:hover .drop-menu-content{
     display: block;
     cursor: pointer;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+    transition: 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
 }
 
 .drop-menu-content a:hover {
@@ -126,8 +127,10 @@ h1 {
 
 .interests:hover {
     border: 2px #020609 solid;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
+    padding: 5px;
+    transition: 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    -moz-transition: 0.25s ease;
 }
 
 .interests h4 {
@@ -452,6 +455,7 @@ footer p {
         cursor: pointer;
         transition: 0.25s ease-in;
         -webkit-transition: 0.25s ease-in;
+        -moz-transition: 0.25s ease-in;
     }
 
     .desktop-nav li:active {
