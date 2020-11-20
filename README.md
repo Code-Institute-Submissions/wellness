@@ -85,3 +85,15 @@ I have used the form code from the love running.
     * visiable on all devices
 * Link 
     * All external links take you to correct site in a new tab
+
+* I checked my HTML and CSS code using [W3C Validator](https://validator.w3.org/)
+
+#### Content and media
+
+* Some texted in the About section is from [HSE](https://www.hse.gov.uk/statistics/causdis/stress.pdf) Work-related stress, anxiety or depression statistics in Great Britain, 2020</p>
+
+* The photos within the site are from [Pexels]()
+
+### Acknowledgements
+
+I got some inspiration from the Love running project, W3schools, and virgin active webites.
