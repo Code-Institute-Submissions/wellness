@@ -169,7 +169,7 @@
     <section class="container"> 
     <div id="box">
         <div class="row">
-            <div class="col-sm-8 col-lg-4 contact-info">
+            <div class="col-sm-12 col-lg contact-info">
                 <h3 id="contact">Contact us</h3>
                 <p> <strong>Wellness Office:</strong> 1st floor next to the canteen.
                 <br>
@@ -179,35 +179,43 @@
                 <br>
                 <strong>Email: </strong> help@mywellness.com</p>
             </div>
-            <form class="col-sm-6 col-lg-4 details">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="first_name" required> 
-            <br>
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="last_name" required>
-            <br>
-            <label for="telenumber">Phone number:</label>
-            <input type="number" name="telephone_number" id="telenumber" maxlength="11" size="11" required>
-            <br>
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email_address" required>
-            </form>
+            <form class="row">
+                    <div class="col-sm col-lg">
+                    <div class="details">
+                        <p>Sign up for more information</p>
+                        <label for="fname">First Name:</label>
+                        <input type="text" id="fname" name="first_name" required> 
+                        <br>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" id="lname" name="last_name" required>
+                        <br>
+                        <label for="telenumber">Phone number:</label>
+                        <input type="tel" name="telephone_number" id="telenumber" maxlength="11" size="11" required>
+                        <br>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email_address" required>
+                    </div>
+                    </div>
 
-            <form class="col-sm-6 col-lg-4 requests">
-            <p>I would like more information on...</p>
-            <input type="radio" id="support" name="information" required>
-            <label for="support">Support available</label>
-            <br>
-            <input type="radio" id="events" name="information">
-            <label for="events">Events and activities</label>
-            <br>
-            <input type="radio" id="session" name="information">
-            <label for="session">One on one session</label>
-            <br>
-            <input type="radio" id="all" name="information">
-            <label for="all">All the above</label>
-            <br>
-            <input type="button" value="Submit">
+                    <div class="col-sm col-lg">
+                    <div class="requests">
+                        <p>I would like more information on...</p>
+                        <input type="radio" id="support" name="information" required>
+                        <label for="support">Support available</label>
+                        <br>
+                        <input type="radio" id="events" name="information">
+                        <label for="events">Events and activities</label>
+                        <br>
+                        <input type="radio" id="session" name="information">
+                        <label for="session">One on one session</label>
+                        <br>
+                        <input type="radio" id="all" name="information">
+                        <label for="all">All the above</label>
+                        <br>
+                        <input type="submit" value="Submit">
+                    </div>
+                    </div>
+                 
             </form>
         </div>
     </div>

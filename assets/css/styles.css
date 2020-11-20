@@ -16,7 +16,7 @@ body {
 
 h1, h3, h4 {
     font-family: 'News Cycle', sans-serif;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 h3, h4 {
@@ -93,8 +93,6 @@ h1 {
     display: block;
     cursor: pointer;
     transition: 0.25s ease;
-    -webkit-transition: 0.25s ease;
-    -moz-transition: 0.25s ease;
 }
 
 .drop-menu-content a:hover {
@@ -129,8 +127,6 @@ h1 {
     border: 2px #020609 solid;
     padding: 5px;
     transition: 0.25s ease;
-    -webkit-transition: 0.25s ease;
-    -moz-transition: 0.25s ease;
 }
 
 .interests h4 {
@@ -226,16 +222,15 @@ h1 {
 /* contact us section styles */
 
 #box {
-    height: 575px;
+    height: 620px;
     width: 100%;
-    margin: auto;
     background-color: #1d3c59;
     color: #fdf6ee;
     border-top: 1.5px slategrey solid;
-    padding: 8px;
 }
 
 .contact-info{
+    margin: auto;
     margin-top: 5px;
 }
 
@@ -244,26 +239,30 @@ h1 {
     text-align: center;
 }
 
-form, form p {
-    font-size: 12px;
-    width: 100%;
-    padding: 10px;
+form {
+    margin: auto;
+    padding-left: 20px;
 }
 
-input[type=text], input[type=number], input[type=email] {
+.details, .requests {
+    margin: 10px;
+    padding: 20px;
+    font-size: 12px;
+}
+
+input[type=text], input[type=tel], input[type=email] {
     background-color: #1d3c59;
     border: none;
     border-bottom: 1px #fdf6ee solid;
     color: white;
 }
 
-input[type=text]:focus, input[type=number]:focus, input[type=email]:focus {
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
    border: #cccccc;
 }
 
-input[type=button] {
+input[type=submit] {
     background-color: #fdf6ee;
-    margin-top: 8px;
     padding: 8px;
 }
 
@@ -370,19 +369,20 @@ footer p {
     }
 
     #box {
-        height: 475px;
+        height: 500px;
     }
 
-    .contact-info, .requests {
-        margin: auto;
-    }
-
-    .details {
-        margin-top: 30px;
+    form {
+        margin: 0px;
+        padding-left: 10px;
     }
 
     .contact-info, form p {
         font-size: 14px;
+    }
+
+    input[type=submit] {
+        float: left;
     }
 
     footer p {
@@ -454,13 +454,17 @@ footer p {
         color: #fdf6ee;
         cursor: pointer;
         transition: 0.25s ease-in;
-        -webkit-transition: 0.25s ease-in;
-        -moz-transition: 0.25s ease-in;
     }
 
     .desktop-nav li:active {
         background-color: #112233;
         color: #fdf6ee;
+    }
+
+    #hero-image {
+        height: 700px;
+        background-position-y: -1px;
+        background-position-x: -1px;
     }
 
     .interests {
@@ -477,7 +481,7 @@ footer p {
     .manager-img, .staff-img, .staff-img-2 {
         height: 175px;
         width: 175px;
-        border: 50%;
+        border-radius: 50%;
         margin-bottom: 10px;
     }
 
@@ -491,12 +495,8 @@ footer p {
         height: 350px;
     }
 
-    .details {
-        padding-top: 50px;
-    }
-
-    .requests {
-        padding-top: 30px;
+    .contact-info {
+        padding-left: 15px;
     }
 
     input[type=button] {
@@ -513,5 +513,11 @@ footer p {
 
     footer p {
         font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #hero-image {
+        height: 900px;
     }
 }
