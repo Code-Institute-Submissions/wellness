@@ -97,3 +97,9 @@ I have used the form code from the love running.
 ### Acknowledgements
 
 I got some inspiration from the Love running project, W3schools, and virgin active webites.
+
+### Deplyment
+
+To deply the site: 
+    - I opened Github.com and accessed my repoitory and then went to the settings section.
+    - I went to the Git pages section and selected the master branch and then root folder and saved.
